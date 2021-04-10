@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Math Quiz</title>
+    </head>
+    <style>
+        body{
+            text-align: center;
+            background-color: antiquewhite;
+        }
+
+        #Title{
+            color: blue;
+            border-style:double;
+            font-size: 75px;
+            text-align: center;
+        }
+
+        input{
+            margin-left: 20px;
+        }
+
+        #output{
+            text-align: center;
+            background: cornflowerblue;
+            border: darkblue;
+        }
+    </style>
+    <body>
+        <div class="container">
+            <h2 id="player1_name"></h2>
+            <span id="player1_score"></span>
+            <br>
+            <h2 id="player2_name"></h2>
+            <span id="player2_score"></span>
+            <br>
+            <center>
+                <marquee behaviour="alternate" direction="left"> <!--Marquee tag added-->
+                    <h1 id="Title">Math Quiz</h1>
+                </marquee>
+                <h3 id="player_question"></h3>
+                <h3 id="player_answer"></h3>
+                <div id="output" class="col-lg-6"></div>
+
+
+                <br>
+                <br>
+
+                <label>Send First Number:</label>
+                <input type="text" id="number1" class="form-control" placeholder="Type a Number">
+                <br>
+                <label>Send Second Number:</label>
+                <input type="text" id="number2" class="form-control" placeholder="Type a Number">
+                <br>
+                <button class="btn btn-success" onclick="send()">Send</button>
+                <br>
+            </center>
+        </div>
+
+        <script src="gamepage.js"></script>
+    </body>
+</html>

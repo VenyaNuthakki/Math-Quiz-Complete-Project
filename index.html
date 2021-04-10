@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Math Quiz</title>
+           
+    </head>
+    <style>
+        #Title{
+            color: rgb(0, 255, 255);
+            border-style:double;
+            font-size: 75px;
+            text-align: center;
+        }
+        #Username1{
+            font-size: 50px;
+            color: yellow;
+        }
+        #Username2{
+            font-size: 50px;
+            color: yellow;
+        }
+        body{
+            text-align: center;
+        }
+    </style>
+    <body style="background-color: darkmagenta;">
+        <marquee behaviour="alternate" direction="left"> <!--Marquee tag added-->
+            <h1 id="Title">Math Quiz</h1>
+        </marquee>
+        <label id="player1_name"><b>Username 1</b></label>
+        <br>
+        <br>
+        <input id="input1" type="text" placeholder="Enter a username">
+        <br>
+        <br>
+        <label id="player2_name"><b>Username 2</b></label>
+        <br>
+        <br>
+        <input id="input2" type="text" placeholder="Enter a username">
+        <br>
+        <br>
+        <button onclick="login()" id="login">Go to Game page</button>
+        <script src="main.js"></script>
+    </body>
+</html>
